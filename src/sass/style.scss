@@ -1,0 +1,74 @@
+// @import 'bootstrap-reboot.min';
+@import 'variables';
+
+@font-face {
+    font-family: 'Ubuntu', sans-serif;
+    src: url(../fonts/Ubuntu-Regular.ttf);
+    font-weight: 400;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+.main-container {
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content:flex-end;
+    max-width: 1920px;
+    min-height: 800px;
+    background: rgb(157, 182, 255);
+    overflow: hidden;
+}
+
+.scroll-description {
+    padding: 0 20px;
+    background: $menu-bg-color;
+    width: 280px;
+    height: min-content;
+    min-height: 450px;
+
+    &__topics {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: right;
+    }
+
+    li {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    li:not(:last-of-type) {
+        border-bottom: 1px solid $border-color;
+    }
+
+    &__link {
+        width: 100%;
+        padding: 15px 0;
+        color: $main-color;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration: none;
+        cursor: pointer;
+        transition: color .2s;
+
+        &:hover {
+            color: $blue-color;
+        }
+
+        &_active {
+            color: $blue-color;
+        }
+    }
+}
+
+
+
+
+
